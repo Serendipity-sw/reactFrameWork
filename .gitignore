@@ -7,3 +7,5 @@ entryBuild
 entryBuild/*
 devBuild
 devBuild/*
+.cache-loader/
+.cache-loader/*
