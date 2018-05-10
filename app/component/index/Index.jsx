@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../public/css/index.pcss';
+import 'antd/dist/antd.min.css'
 
 class Index extends React.Component {
     render() {
