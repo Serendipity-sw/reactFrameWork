@@ -9,3 +9,5 @@ devBuild
 devBuild/*
 .cache-loader/
 .cache-loader/*
+dist
+dist/*
