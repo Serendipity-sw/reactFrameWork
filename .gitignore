@@ -11,3 +11,5 @@ devBuild/*
 .cache-loader/*
 dist
 dist/*
+backup
+backup/*
