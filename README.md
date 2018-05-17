@@ -2,7 +2,7 @@
 react框架练手
 
 ## 需要电脑安装的npm插件
-    npm i rimraf -
+    npm i rimraf -g
     
 ### 项目集成插件
     1. postcss  
