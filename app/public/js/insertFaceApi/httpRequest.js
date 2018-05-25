@@ -21,7 +21,7 @@ let HttpGet=(url,successCallBack,errorCallBack)=>{
 /**
  * http post请求
  * @param url 请求地址
- * @param dataObject 请求参数()
+ * @param dataObject 请求参数
  * @param successCallback 成功回调函数
  * @param errorCallBack 错误回调函数
  * @constructor
