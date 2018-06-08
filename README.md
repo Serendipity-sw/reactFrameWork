@@ -10,6 +10,7 @@ react框架练手
     3. [ant design](https://ant.design/docs/react/introduce-cn) UI库  
     4. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
     5. [axios](https://github.com/axios/axios) http请求库
+    6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具
 
 ### http请求使用说明
 
