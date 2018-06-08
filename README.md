@@ -9,8 +9,8 @@ react框架练手
     2. postcss-cssnext 样式处理,会自动追加浏览器前缀  
     3. [ant design](https://ant.design/docs/react/introduce-cn) UI库  
     4. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
-    5. [axios](https://github.com/axios/axios) http请求库
-    6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具
+    5. [axios](https://github.com/axios/axios) http请求库  
+    6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上
 
 ### http请求使用说明
 
@@ -29,3 +29,15 @@ react框架练手
             dataObject 请求参数
             successCallback 成功回调函数(如该参数无值,则将调用ant design 中的全局提示message方法)
             errorCallBack 错误回调函数  (如该参数无值,则将调用ant design 中的全局提示message方法)
+            
+### 增加xlsx使用说明
+
+##### 集成xlsx公共方法,使用插件为js-xlsx插件
+    插件存放于根目录下app/public/js/xlsxProcess/xlsxProcess.js中
+    
+    1. ExcelWriteFile excel客户端导出
+        方法接受参数:
+            dataArray 数据集合 示例 [ ["基站名称", "基站地址", "小区编码(lac)", "扇区编码(cell_id或者ci)", "经度", "维度", "网络制式", "基站类型"]... ]
+            fileName 下载文件名
+            
+        使浏览器进行file下载
