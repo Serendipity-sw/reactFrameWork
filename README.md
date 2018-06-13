@@ -11,7 +11,8 @@ react框架练手
     4. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
     5. [axios](https://github.com/axios/axios) http请求库  
     6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上  
-    7. [js-cookie](https://github.com/js-cookie/js-cookie) cookies操作插件 兼容IE8以上
+    7. [js-cookie](https://github.com/js-cookie/js-cookie) cookies操作插件 兼容IE8以上  
+    8. [DOM to Image](https://github.com/tsayen/dom-to-image) dom生成img图片,浏览器支持一般,请详细观看该插件github文档
 
 ### http请求使用说明
 
