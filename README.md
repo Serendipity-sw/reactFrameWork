@@ -42,3 +42,10 @@ react框架练手
             fileName 下载文件名
             
         使浏览器进行file下载
+        
+        
+### 增加cookie使用说明
+[js-cookie](https://github.com/js-cookie/js-cookie)详细文档
+
+    在需要使用的地方引用 `import * as Cookies from "js-cookie"`
+    然后即可在内部使用 Cookies.get()...
