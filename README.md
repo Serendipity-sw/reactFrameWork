@@ -10,7 +10,8 @@ react框架练手
     3. [ant design](https://ant.design/docs/react/introduce-cn) UI库  
     4. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
     5. [axios](https://github.com/axios/axios) http请求库  
-    6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上
+    6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上  
+    7. [js-cookie](https://github.com/js-cookie/js-cookie) cookies操作插件 兼容IE8以上
 
 ### http请求使用说明
 
