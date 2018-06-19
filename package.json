@@ -10,11 +10,9 @@
     "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
     "p": "set BABEL_ENV=production && webpack --progress --colors --config config/webpack/webpack.prod.conf.js",
     "mp": "export BABEL_ENV=production && webpack --progress --colors --config config/webpack/webpack.prod.conf.js",
-    "ptp": "npm run p && gulp buildTime zip test pre",
+    "start": "npm run devNew && npm run dev",
     "build_mac": "npm run devNew && npm run mp && gulp buildTime zip",
     "build_windows": "npm run devNew && npm run p && gulp buildTime zip",
-    "start_mac": "npm run devNew && npm run dev",
-    "start_windows": "npm run devNew && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
