@@ -6,6 +6,7 @@ import {HashRouter, NavLink, Route} from "react-router-dom";
 import HeadLeft from "../common/HeadLeft";
 import {Col, Row} from "antd";
 import Weater from "../common/Weater";
+import ExcelDown from "../excelDown/ExcelDown";
 
 class Index extends React.Component {
     render() {
@@ -35,7 +36,7 @@ class Index extends React.Component {
                                 </Col>
                             </Row>
                         </header>
-                        <Route exact path="/" component={HeadLeft}/>
+                        <Route exact path="/" component={ExcelDown}/>
                         <Route exact path="/demo2" component={HeadLeft}/>
                     </div>
                 </HashRouter>
