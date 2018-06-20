@@ -15,6 +15,8 @@ react框架练手
     8. [DOM to Image](https://github.com/tsayen/dom-to-image) dom生成img图片,浏览器支持一般,请详细观看该插件github文档  
     9. [prop-types](https://github.com/facebook/prop-types) 新增类型判断,详细文档请查看github文档 增加该插件势必为了规范在编码过程中导致变量类型混乱使用情况,针对类似1与字符串"1" 这种傻傻不分的人
 
+````注意项目启动及发布命令请详细参考根目录下package.json -> scripts 下命令 需要主要使用到的为start及build命令````
+
 ### http请求使用说明
 
 ##### 项目中集成了http公共方法,使用的插件为axios http插件
