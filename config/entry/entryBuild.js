@@ -11,8 +11,12 @@ rimraf.sync(entryBuildPath);
 fs.mkdirSync(entryBuildPath);
 const entryContent = data => `import React from 'react';
 import ReactDOM from 'react-dom';
-import Index from '../app/component/${data.path}';
-ReactDOM.render([<Index key="Index"/>],document.getElementById('app'));`;
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from '../app/public/js/reducers';
+import Index from '../app/component/${data.path}'
+const store = createStore(rootReducer);
+ReactDOM.render([<Provider store={store}><Index key="Index"/></Provider>],document.getElementById('app'));`;
 /*生成webpack entry 入口文件*/
 entry.map((data) => {
     fs.writeFile(entryBuildPath + '/' + data.name + '.js', entryContent(data), 'utf8', function (err) {

@@ -12,7 +12,8 @@ react框架练手
     5. [axios](https://github.com/axios/axios) http请求库  
     6. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上  
     7. [js-cookie](https://github.com/js-cookie/js-cookie) cookies操作插件 兼容IE8以上  
-    8. [DOM to Image](https://github.com/tsayen/dom-to-image) dom生成img图片,浏览器支持一般,请详细观看该插件github文档
+    8. [DOM to Image](https://github.com/tsayen/dom-to-image) dom生成img图片,浏览器支持一般,请详细观看该插件github文档  
+    9. [prop-types](https://github.com/facebook/prop-types) 新增类型判断,详细文档请查看github文档 增加该插件势必为了规范在编码过程中导致变量类型混乱使用情况,针对类似1与字符串"1" 这种傻傻不分的人
 
 ### http请求使用说明
 

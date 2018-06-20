@@ -5,5 +5,12 @@ module.exports = [
         title: '首页',
         keywords: '首页,xxx',
         description: '这是我们的首页'
+    },
+    {
+        name: 'reduxExercise',
+        path: 'reduxExercise/Index.jsx',
+        title: 'redux练习',
+        keywords: 'redux练习',
+        description: 'redux练习'
     }
 ];
