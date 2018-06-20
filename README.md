@@ -5,8 +5,8 @@ react框架练手
     npm i rimraf -g
     
 ### 项目集成插件
-    1. postcss  
-    2. postcss-cssnext 样式处理,会自动追加浏览器前缀  
+    1. [postcss](https://github.com/postcss/postcss) 样式预处理插件,请追加的样式文件后缀名为.pcss结尾的文件  
+    2. [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) 样式处理,会自动追加浏览器前缀  
     3. [ant design](https://ant.design/docs/react/introduce-cn) UI库  
     4. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
     5. [axios](https://github.com/axios/axios) http请求库  
