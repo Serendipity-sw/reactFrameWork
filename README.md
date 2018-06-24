@@ -7,6 +7,7 @@ react框架练手
 ### 推荐插件
 1. [ant design](https://ant.design/docs/react/introduce-cn) UI库
 2. [styled-components](https://github.com/styled-components/styled-components) 样式主导生成元素.
+3. [Sortable](https://github.com/RubaXa/Sortable) react中可拖拽插件.地址:[demo](http://rubaxa.github.io/Sortable/)
     
 ### 项目集成插件
     1. [postcss](https://github.com/postcss/postcss) 样式预处理插件,请追加的样式文件后缀名为.pcss结尾的文件  
