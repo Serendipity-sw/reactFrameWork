@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'antd';
 import xlsxProcess from "../../public/js/xlsxProcess/xlsxProcess";
 
 class ExcelDown extends React.Component{
@@ -20,7 +19,7 @@ class ExcelDown extends React.Component{
     render(){
         return(
             <div>
-                <Button type="primary" icon="download" onClick={this.excelButtonClick} size="large">excel导出示例</Button>
+                <button type="primary" icon="download" onClick={this.excelButtonClick} size="large">excel导出示例</button>
             </div>
         )
     }
