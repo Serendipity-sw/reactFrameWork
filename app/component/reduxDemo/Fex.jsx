@@ -8,7 +8,6 @@ import {connect} from 'react-redux'
 class Fex extends React.Component{
 
     componentDidMount(){
-        debugger
         // redux对象监听待研究
         // this.props.state.subscribe(this.conso)
     }
@@ -19,6 +18,7 @@ class Fex extends React.Component{
     }
 
     render(){
+        this.conso()
         return(
             <div>
                 <a href="javascript:void(0)">{JSON.stringify(this.props.userObj)}</a>
