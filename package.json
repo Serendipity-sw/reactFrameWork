@@ -1,7 +1,7 @@
 {
-  "name": "reactExercise",
-  "version": "1.0.0",
-  "description": "react框架练手",
+  "name": "reactFrameWork",
+  "version": "1.1.0",
+  "description": "react脚手架",
   "main": "index.js",
   "scripts": {
     "entry": "node config/entry/entryBuild.js",
