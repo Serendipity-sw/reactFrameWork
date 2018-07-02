@@ -13,7 +13,7 @@ react脚手架
     
 ### 项目集成插件
     1. [postcss](https://github.com/postcss/postcss) 样式预处理插件,请追加的样式文件后缀名为.pcss结尾的文件  
-    2. [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) 样式处理,会自动追加浏览器前缀      
+    2. [autoprefixer](https://github.com/postcss/autoprefixer) 样式处理,会自动追加浏览器前缀      
     3. [react-icons](https://github.com/gorangajic/react-icons) 字体图标库  
     4. [axios](https://github.com/axios/axios) http请求库  
     5. [js-xlsx](https://github.com/SheetJS/js-xlsx) excel生成读取工具 兼容IE8以上  
