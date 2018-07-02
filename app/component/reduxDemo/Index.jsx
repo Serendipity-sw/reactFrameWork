@@ -32,11 +32,12 @@ class Index extends React.Component{
     render(){
         return(
             <div>
+                <button key="123" onClick={this.addUser}>新增</button>
+                <button key="wrweqr" onClick={this.updateUser}>删除</button>
+
                 <label key="321">
                     {JSON.stringify(this.props.userObj)}
                 </label>
-                <button key="123" onClick={this.addUser}>新增</button>
-                <button key="wrweqr" onClick={this.updateUser}>删除</button>
                 <br/>
                 <Fex gloomysw="qwe"></Fex>
             </div>
