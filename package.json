@@ -7,7 +7,8 @@
     "iOS >= 8",
     "Firefox >= 20",
     "Android > 4.4",
-    "Chrome >= 10"
+    "Chrome >= 10",
+    "ie >= 8"
   ],
   "scripts": {
     "entry": "node config/entry/entryBuild.js",
