@@ -15,6 +15,7 @@ react脚手架
 3. [Sortable](https://github.com/RubaXa/Sortable) react中可拖拽插件.地址:[demo](http://rubaxa.github.io/Sortable/)
 4. [react-motion](https://github.com/chenglou/react-motion) react一些动画
 5. [react-router-transition](https://github.com/maisano/react-router-transition) react路由动画
+6. [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) 滚动条插件
     
 ### 项目集成插件
     1. [postcss](https://github.com/postcss/postcss) 样式预处理插件,请追加的样式文件后缀名为.pcss结尾的文件  
