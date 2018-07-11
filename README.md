@@ -28,6 +28,7 @@ react脚手架
     9. [proposal-object-rest-spread](https://github.com/tc39/proposal-object-rest-spread) 新增对象拆分及合并写法. (例:let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };   let n = { x, y, ...z };  )    详细请参考github文档   配置手册在[babel-plugin-transform-object-rest-spread](http://babeljs.io/docs/en/babel-plugin-transform-object-rest-spread/)  
     10. [moment](http://momentjs.com/docs/)时间格式化插件,详细文档,请查阅该插件的doc文档  
     11. [postcss-preset-env](https://github.com/csstools/postcss-preset-env)允许你使用未来的 CSS 特性
+    12. [react-document-title](https://github.com/gaearon/react-document-title)允许你的组件修正document-title
 
 ````注意项目启动及发布命令请详细参考根目录下package.json -> scripts 下命令 需主要使用到的命令为start及build````
 
