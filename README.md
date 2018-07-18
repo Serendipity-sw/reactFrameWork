@@ -30,7 +30,8 @@ react脚手架
     10. [moment](http://momentjs.com/docs/)时间格式化插件,详细文档,请查阅该插件的doc文档  
     11. [postcss-preset-env](https://github.com/csstools/postcss-preset-env)允许你使用未来的 CSS 特性  
     12. [react-document-title](https://github.com/gaearon/react-document-title)允许你的组件修正document-title  
-    13. [postcss-initial](https://github.com/maximkoretskiy/postcss-initial)加了 all: initial 的支持，重置了所有继承的样式
+    13. [postcss-initial](https://github.com/maximkoretskiy/postcss-initial)加了 all: initial 的支持，重置了所有继承的样式  
+    14. [postcss-modules](https://github.com/css-modules/postcss-modules)可以自动以组件为单位隔绝 CSS 选择器。
 
 ````注意项目启动及发布命令请详细参考根目录下package.json -> scripts 下命令 需主要使用到的命令为start及build````
 
