@@ -13,3 +13,4 @@ dist
 dist/*
 backup
 backup/*
+*/**/*.pcss.json

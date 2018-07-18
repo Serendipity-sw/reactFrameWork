@@ -2,6 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addStudent,update} from '../../public/js/reducers/user'
 import Fex from "./Fex";
+import '../../public/css/shaowei.pcss'
+import style from '../../public/css/shaowei.pcss.json'
 
 @connect(
     state=>({userObj:state.user}),
@@ -35,7 +37,7 @@ class Index extends React.Component{
                 <button key="123" onClick={this.addUser}>新增</button>
                 <button key="wrweqr" onClick={this.updateUser}>删除</button>
 
-                <label key="321">
+                <label key="321" className={style.index}>
                     {JSON.stringify(this.props.userObj)}
                 </label>
                 <br/>
