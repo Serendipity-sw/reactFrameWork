@@ -16,6 +16,7 @@ react脚手架
 4. [react-motion](https://github.com/chenglou/react-motion) react一些动画
 5. [react-router-transition](https://github.com/maisano/react-router-transition) react路由动画
 6. [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars) 滚动条插件
+7. [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) px转rem单位 如使用请详细阅读文档手册 示例``require('postcss-pxtorem')({ rootValue: 100, unitPrecision: 5, propList: ['*'], selectorBlackList: [], replace: true, mediaQuery: false, minPixelValue: 0 })``需将该配置放入postcss.config.js中,且需要将其放在autoprefixer插件与postcss-modules插件中间.否则会有样式处理上的一些BUG,请勿搞乱顺序
     
 ### 项目集成插件
     1. [postcss](https://github.com/postcss/postcss) 样式预处理插件,请追加的样式文件后缀名为.pcss结尾的文件  
