@@ -79,6 +79,14 @@ let config = merge(baseWebpackConfig, {
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
                     use: "css-loader!postcss-loader"
+                }),
+                exclude: /node_modules/
+            },
+            {
+                test:/\.css$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: "css-loader"
                 })
             },
             {
