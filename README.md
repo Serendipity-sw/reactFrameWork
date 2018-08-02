@@ -44,15 +44,27 @@ react脚手架
     1.HttpGet http get请求
         方法接收参数
             url 请求地址
-            successCallBack 成功回调函数(如该参数无值,则将调用ant design 中的全局提示message方法)
-            errorCallBack 错误回调函数  (如该参数无值,则将调用ant design 中的全局提示message方法)
+            successCallBack 成功回调函数(如该参数无值,则将console.log打印信息)
+            errorCallBack 错误回调函数  (如该参数无值,则将console.log打印信息)
     
     2.HttpPost http post请求
         方法接收参数
             url 请求地址
-            dataObject 请求参数
-            successCallback 成功回调函数(如该参数无值,则将调用ant design 中的全局提示message方法)
-            errorCallBack 错误回调函数  (如该参数无值,则将调用ant design 中的全局提示message方法)
+            dataObject 请求参数 {}
+            successCallback 成功回调函数(如该参数无值,则将console.log打印信息)
+            errorCallBack 错误回调函数  (如该参数无值,则将console.log打印信息)
+    
+    3.httpUrlGetAll http get 多并发请求
+        方法接收参数
+            urlList ['请求地址',...]
+            successCallback 成功回调函数(如该参数无值,则将console.log打印信息)
+            errorCallBack 错误回调函数  (如该参数无值,则将console.log打印信息)
+    
+    3.httpUrlPostAll http post 多并发请求
+        方法接收参数
+            urlList [{url:'',dataObject:{请求参数}},...]
+            successCallback 成功回调函数(如该参数无值,则将console.log打印信息)
+            errorCallBack 错误回调函数  (如该参数无值,则将console.log打印信息)
             
 ### 增加xlsx使用说明
 

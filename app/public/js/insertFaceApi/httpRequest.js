@@ -72,7 +72,7 @@ let Get=(url)=>{
 
 /**
  * http get 多并发请求
- * @param urlList [{url:'',dataObject:请求参数},...]
+ * @param urlList ['请求地址',...]
  * @param successCallback 成功回调
  * @param errorCallback 失败回调
  */
@@ -99,7 +99,7 @@ let httpUrlGetAll = (urlList, successCallback, errorCallback) => {
 
 /**
  * http post 多并发请求
- * @param urlList [{url:'',dataObject:请求参数},...]
+ * @param urlList [{url:'',dataObject:{请求参数}},...]
  * @param successCallback 成功回调
  * @param errorCallback 失败回调
  */
