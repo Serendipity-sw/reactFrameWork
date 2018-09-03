@@ -1,7 +1,6 @@
 import React from 'react'
 import ChinaMobileLog from '../../public/img/chinaMobil.png'
 import YixingLogo from '../../public/img/yixingLogo.png'
-import '../../public/css/common/head.pcss'
 
 
 class HeadLeft extends React.Component {

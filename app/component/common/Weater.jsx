@@ -1,5 +1,4 @@
 import React from 'react'
-import apiUrl from "../../public/js/util";
 import simulationData from "../../public/js/simulationData/simulationData";
 import moment from "moment";
 
