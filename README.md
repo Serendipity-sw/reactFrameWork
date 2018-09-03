@@ -33,7 +33,8 @@ react脚手架
     12. [react-document-title](https://github.com/gaearon/react-document-title)允许你的组件修正document-title  
     13. [postcss-initial](https://github.com/maximkoretskiy/postcss-initial)加了 all: initial 的支持，重置了所有继承的样式  
     14. [postcss-modules](https://github.com/css-modules/postcss-modules)可以自动以组件为单位隔绝 CSS 选择器。  
-    15. [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) px转rem单位 如使用请详细阅读文档手册 示例``require('postcss-pxtorem')({ rootValue: 100, unitPrecision: 5, propList: ['*'], selectorBlackList: [], replace: true, mediaQuery: false, minPixelValue: 0 })``
+    15. [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) px转rem单位 如使用请详细阅读文档手册 示例``require('postcss-pxtorem')({ rootValue: 100, unitPrecision: 5, propList: ['*'], selectorBlackList: [], replace: true, mediaQuery: false, minPixelValue: 0 })``  
+    16. [precss](https://github.com/jonathantneal/precss) 预处理css的插件包,成了很多postcss插件的功能，比如嵌套，变量，继承，混合，循环，判断 .请着重翻阅改规则文档.
 
 ````注意项目启动及发布命令请详细参考根目录下package.json -> scripts 下命令 需主要使用到的命令为start及build````
 
