@@ -7,6 +7,9 @@ let config = {
     entry: newEntry,
     resolve: {
         extensions: [".js", ".json", ".jsx", ".css", ".pcss"],
+        alias:{
+            '@':path.join(__dirname, '..', '../app/public')
+        }
     }
 };
 module.exports = config;
