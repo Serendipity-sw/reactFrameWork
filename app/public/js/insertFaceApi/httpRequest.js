@@ -80,12 +80,10 @@ let httpUrlGetAll = (urlList, successCallback, errorCallback) => {
     let list = urlList.map(item => {
             return Get(item)
         }),
-        resultData = []
+        resultData = new Array(urlList.length)
 
-    axios.all(list).then(axios.spread(() => {
-        for (let i = 0; i < arguments.length; i++) {
-            resultData.push(arguments[i])
-        }
+    axios.all(list).then(axios.spread((...resultData) => {
+        resultData=resultData.map(item=>item.data)
         successCallback ? successCallback(resultData) : console.log('接口数据请求成功,但未处理')
     })).catch((err) => {
         console.log(err)
@@ -107,12 +105,10 @@ let httpUrlPostAll = (urlList, successCallback, errorCallback) => {
     let list = urlList.map(item => {
             return Post(item.url, item.dataObject)
         }),
-        resultData = []
+        resultData = new Array(urlList.length)
 
     axios.all(list).then(axios.spread(() => {
-        for (let i = 0; i < arguments.length; i++) {
-            resultData.push(arguments[i])
-        }
+        resultData=resultData.map(item=>item.data)
         successCallback ? successCallback(resultData) : console.log('接口数据请求成功,但未处理')
     })).catch((err) => {
         console.log(err)
