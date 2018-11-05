@@ -3,8 +3,14 @@ import qs from 'qs'
 import simulationData from "../simulationData/simulationData";
 import {httpRealUrl} from "../util";
 
-let httpUrl = process.env.NODE_ENV === "development" ? 'http://localhost:8000/' : '',
-    httpTimeOut = process.env.NODE_ENV === "development" ? 3000 : 500
+let isDev = process.env.NODE_ENV === "development",
+    httpUrl = isDev ? 'http://localhost:8000/' : '',
+    httpTimeOut = isDev ? 3000 : 500,
+    isSimulationData = true,
+    isError = false,
+    errorData = {
+        status: 500,
+    }
 
 /**
  * http get请求
@@ -23,7 +29,7 @@ let HttpGet = (url, successCallBack, errorCallBack) => {
         successCallBack ? successCallBack(resopne.data) : console.log('告警接口请求成功,程序未处理!')
     }).catch((err) => {
         console.log(err)
-        errorCallBack ? errorCallBack(simulationData[url]) : successCallBack ? successCallBack(simulationData[url]) : console.log('接口请求失败')
+        errorCallBack ? errorCallBack(isError ? err : simulationData[url]) : successCallBack ? successCallBack(isSimulationData ? simulationData[url] : errorData) : console.log('接口请求失败')
     })
 }
 
@@ -47,7 +53,7 @@ let HttpPost = (url, dataObject, successCallback, errorCallBack) => {
         successCallback ? successCallback(respone.data) : console.log('接口数据请求成功,但未处理')
     }).catch((err) => {
         console.log(err)
-        errorCallBack ? errorCallBack(simulationData[url]) : successCallback ? successCallback(simulationData[url]) : console.log('接口请求失败')
+        errorCallBack ? errorCallBack(isError ? err : simulationData[url]) : successCallback ? successCallback(isSimulationData ? simulationData[url] : errorData) : console.log('接口请求失败')
     })
 }
 
@@ -62,7 +68,7 @@ let Post = (url, dataObject) => {
     })
 }
 
-let Get=(url)=>{
+let Get = (url) => {
     return axios({
         method: 'get',
         url: httpUrl + httpRealUrl[url],
@@ -83,14 +89,14 @@ let httpUrlGetAll = (urlList, successCallback, errorCallback) => {
         resultData = new Array(urlList.length)
 
     axios.all(list).then(axios.spread((...resultData) => {
-        resultData=resultData.map(item=>item.data)
+        resultData = resultData.map(item => item.data)
         successCallback ? successCallback(resultData) : console.log('接口数据请求成功,但未处理')
     })).catch((err) => {
         console.log(err)
-        resultData=urlList.map(item=>{
+        resultData = urlList.map(item => {
             return simulationData[item]
         })
-        errorCallback ? errorCallback(err) : successCallback ? successCallback(resultData) : console.log('接口请求失败')
+        errorCallback ? errorCallback(isError ? err : resultData) : successCallback ? successCallback(isSimulationData ? resultData : errorData) : console.log('接口请求失败')
     })
 }
 
@@ -108,14 +114,14 @@ let httpUrlPostAll = (urlList, successCallback, errorCallback) => {
         resultData = new Array(urlList.length)
 
     axios.all(list).then(axios.spread(() => {
-        resultData=resultData.map(item=>item.data)
+        resultData = resultData.map(item => item.data)
         successCallback ? successCallback(resultData) : console.log('接口数据请求成功,但未处理')
     })).catch((err) => {
         console.log(err)
-        resultData=urlList.map(item=>{
+        resultData = urlList.map(item => {
             return simulationData[item.url]
         })
-        errorCallback ? errorCallback(err) : successCallback ? successCallback(resultData) : console.log('接口请求失败')
+        errorCallback ? errorCallback(isError ? err : resultData) : successCallback ? successCallback(isSimulationData ? resultData : errorData) : console.log('接口请求失败')
     })
 }
 
@@ -140,7 +146,7 @@ let HttpPostFile = (url, dataObject, successCallback, errorCallBack) => {
         successCallback ? successCallback(respone.data) : console.log('接口数据请求成功!但未处理')
     }).then((err) => {
         console.log(err)
-        errorCallBack ? errorCallBack(err) : successCallback ? successCallback(simulationData[url]) : console.log('接口请求失败')
+        errorCallBack ? errorCallBack(isError ? err : simulationData[url]) : successCallback ? successCallback(isSimulationData ? simulationData[url] : errorData) : console.log('接口请求失败')
     })
 }
 
